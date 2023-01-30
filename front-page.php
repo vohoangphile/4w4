@@ -9,7 +9,7 @@
 
 <?php get_header(); ?>
 <main>
-<h3>index.php</h3>
+    <h3>front-page.php</h3>
 <?php 
 /**
  * have_posts, c'est une fonction qui extrait un enregistrement et vérifier
@@ -20,8 +20,8 @@
  */
     if (have_posts()): 
         while (have_posts()) : the_post();
-            the_title('<h1>', '</h1>');
-            the_content(); ?>
+            echo '<h1>' . get_the_title() . '</h1>';
+            //the_content(); ?>
             <hr>
         <?php endwhile;
     endif;
