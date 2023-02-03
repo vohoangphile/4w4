@@ -1,6 +1,6 @@
 <?php
 /**
- * Modèle par défaut
+ * 
  * 
  */
 ?>
@@ -16,12 +16,15 @@
  * s'il existe les articles
  * the_post permet de créer un objet pour chercher des function comme
  * comme the_title ou the_content (Montre le contenu des articles)
+ * get_the_title tu dois faire echo si tu l'utilise et ça donne plus de 
+ * souplesse
  * 
  */
     if (have_posts()): 
-        while (have_posts()) : the_post();
-            echo '<h1>' . get_the_title() . '</h1>';
-            //the_content(); ?>
+        while (have_posts()) : the_post();?>
+            <h1>
+                <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
+            </h1>
             <hr>
         <?php endwhile;
     endif;

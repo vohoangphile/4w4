@@ -1,6 +1,6 @@
 <?php
 /**
- * Modèle par défaut
+ * Pour afficher une page
  * 
  */
 ?>
@@ -9,7 +9,7 @@
 
 <?php get_header(); ?>
 <main>
-<h3>index.php</h3>
+<h3>single.php</h3>
 <?php 
 /**
  * have_posts, c'est une fonction qui extrait un enregistrement et vérifier
