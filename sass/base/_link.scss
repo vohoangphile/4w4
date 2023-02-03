@@ -3,7 +3,7 @@
 a{
     color : rgb(47, 130, 255);
     &:visited {
-        color: rgb(60, 105, 255);
+        color: rgb(68, 112, 255);
     }
     &:hover {
         color: rgb(255, 186, 75);
@@ -17,5 +17,9 @@ a{
 
     a{
         font-size: 1.2em;
+       
+    }
+    li {
+        list-style: none;
     }
 }
