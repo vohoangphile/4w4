@@ -321,6 +321,7 @@ template {
 }
 
 /* --------------------------------------------- base */
+/* --------------------------------------------- base */
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
@@ -369,4 +370,25 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-/* --------------------------------------------- composant *//*# sourceMappingURL=style.css.map */
+/* --------------------------------------------- link */
+a {
+  color: rgb(47, 130, 255);
+}
+a:visited {
+  color: rgb(118, 255, 134);
+}
+a:hover {
+  color: rgb(255, 186, 75);
+}
+
+/* --------------------------------------------- composant */
+.site__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site__footer section {
+  border: 1px solid #aaa;
+  flex: 1 1 200px;
+}/*# sourceMappingURL=style.css.map */
