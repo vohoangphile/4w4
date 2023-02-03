@@ -2,11 +2,20 @@
 
 a{
     color : rgb(47, 130, 255);
-
     &:visited {
-        color: rgb(86, 255, 106);
+        color: rgb(60, 105, 255);
     }
     &:hover {
         color: rgb(255, 186, 75);
+    }
+}
+/* --------------------------------------------- menu */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    a{
+        font-size: 1.2em;
     }
 }
