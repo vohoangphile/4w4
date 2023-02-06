@@ -2,7 +2,7 @@
 Theme Name: 2023-4w4
 Theme URI: https://referenced.ca
 Author: Phi Le
-Author URI: https://wordpress.org/
+Author URI: https://github.com/vohoangphile
 Description:U thèeme de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
@@ -24,3 +24,4 @@ Text Domain: 2023-4w4
 
 /* --------------------------------------------- composant */
 @import "composant/pied_page";
+@import "composant/menu_entete";

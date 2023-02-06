@@ -1,0 +1,14 @@
+.menu-entete-container { // nav
+    .menu{ // ul
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        .menu-item { //li
+            
+            color: rgb(0, 21, 85);
+            a{
+                display: block;
+            }
+        }
+    }
+}

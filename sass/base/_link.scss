@@ -9,17 +9,4 @@ a{
         color: rgb(255, 186, 75);
     }
 }
-/* --------------------------------------------- menu */
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
-    a{
-        font-size: 1.2em;
-       
-    }
-    li {
-        list-style: none;
-    }
-}
