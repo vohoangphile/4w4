@@ -375,7 +375,7 @@ a {
   color: rgb(47, 130, 255);
 }
 a:visited {
-  color: rgb(118, 255, 134);
+  color: rgb(86, 148, 255);
 }
 a:hover {
   color: rgb(255, 186, 75);
@@ -391,4 +391,32 @@ a:hover {
 .site__footer section {
   border: 1px solid #aaa;
   flex: 1 1 200px;
+}
+
+.site__header__logo {
+  background-color: rgb(2, 74, 108);
+}
+
+.site__header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----------------------------------------------------- menu-entete */
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(0, 42, 85);
+}
+.menu-entete-container .menu .menu-item a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+  padding: 5px 20px;
 }/*# sourceMappingURL=style.css.map */

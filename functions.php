@@ -21,5 +21,15 @@ add_action( 'wp_enqueue_scripts', 'ajouter_styles' );
 }
 add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );  
 
+/*-------------------------------------- add_theme_support()
+title_tag crée un title et 
+*/
+add_theme_support( 'title-tag' ); 
+add_theme_support('custom-logo',array(
+    'height' => 450,
+    'width'  => 720,
+) );
 
- 
+
+
+add_theme_support( 'post-thumbnails' ); // récupère une image qu'on mit sur une article ou autre

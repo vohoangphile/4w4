@@ -1,4 +1,4 @@
-# Laboratoire 1
+# Exercice 1
 ## 4w4 - Conception d'interfac eet développement web
 ### auteur: Vo Hoang Phi Le
 #### Description
