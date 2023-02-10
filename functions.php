@@ -26,8 +26,8 @@ title_tag crée un title et
 */
 add_theme_support( 'title-tag' ); 
 add_theme_support('custom-logo',array(
-    'height' => 450,
-    'width'  => 720,
+    'height' => 150,
+    'width'  => 150,
 ) );
 
 

@@ -16,7 +16,8 @@
             )) ?>
         </section>
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
-    <h2><?= bloginfo('description') ?></h2>
+    <h1>Bienvenue dans le cours de 4W4</h1>
+    <h2 style="text-align: center;"><?= bloginfo('description') ?></h2>
     </header>
 </body>
 </html>

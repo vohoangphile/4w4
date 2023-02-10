@@ -1,12 +1,13 @@
 /* --------------------------------------------- link */
 
 a{
-    color : rgb(47, 130, 255);
+    color : rgb(44, 182, 233);
 
     &:visited {
-        color: rgb(86, 148, 255);
+        color: rgb(44, 182, 233);
     }
     &:hover {
         color: rgb(255, 186, 75);
+        transition: 0.2s;
     }
 }

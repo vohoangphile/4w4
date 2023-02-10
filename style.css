@@ -372,13 +372,18 @@ p {
 
 /* --------------------------------------------- link */
 a {
-  color: rgb(47, 130, 255);
+  color: rgb(44, 182, 233);
 }
 a:visited {
-  color: rgb(86, 148, 255);
+  color: rgb(44, 182, 233);
 }
 a:hover {
   color: rgb(255, 186, 75);
+  transition: 0.2s;
+}
+
+body main {
+  padding: 2rem 2rem;
 }
 
 /* --------------------------------------------- composant */
@@ -386,6 +391,10 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-size: 2rem;
+  color: #aaa;
+  height: 20vh;
+  background-color: black;
 }
 
 .site__footer section {
@@ -393,8 +402,13 @@ a:hover {
   flex: 1 1 200px;
 }
 
+.site__header h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
 .site__header__logo {
-  background-color: rgb(2, 74, 108);
+  background-color: rgb(0, 27, 40);
 }
 
 .site__header__logo {
@@ -419,4 +433,9 @@ a:hover {
   text-decoration: none;
   display: block;
   padding: 5px 20px;
+}
+.menu-entete-container .menu .menu-item a:hover, .menu-entete-container .menu .menu-item a:focus {
+  background-color: rgb(249, 255, 253);
+  color: rgb(48, 200, 255);
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
