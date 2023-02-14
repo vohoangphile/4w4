@@ -1,8 +1,6 @@
 .site__header {
-   h1{
-    text-align: center;
-    font-size: 3rem;
-   }
+   width: 100%;
+   text-align: center;
 }
 .site__header__logo{
     background-color: rgb(0, 27, 40);
@@ -14,19 +12,19 @@
     align-items: center;
 }
 
-/* ----------------------------------------------------- menu-entete */
-.menu-entete-container { // nav
+ //----------------------------------------------------- menu-entete 
 
     .menu{ // ul
         display : flex;
         list-style-type: none;
         justify-content: flex-end;
+        flex-wrap: wrap;
         .menu-item { //li
             color : rgb(0, 42, 85);
             a {
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: white;
-            font-size: 1.5rem;
+            font-size: 1rem;
             text-decoration: none;
             display : block;
             padding: 5px 20px;
@@ -40,4 +38,4 @@
             
         }
     }
-    }
+    

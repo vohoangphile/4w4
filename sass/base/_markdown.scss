@@ -1,0 +1,28 @@
+/* Les balise qu'on utilise dans la conversion des fichiers markdown */
+
+/* Liste */
+ul,ol {}
+
+ul > li,
+ol > li{
+
+}
+
+ul> li {}
+
+ol>li {}
+
+/* ------------------------------ pre */
+
+pre {}//affichage du code barre de défilement
+
+code {}
+
+i{}
+
+blockquote{}
+
+hr{}
+
+strong{}
+
