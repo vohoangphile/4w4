@@ -2,13 +2,10 @@
 ## 4w4 - Conception d'interfac eet développement web
 ### auteur: Vo Hoang Phi Le
 #### Description
-- Installation sur un serveur distant « siteground.com »
-- l'utilisation de la fonction get_the_excerpt() dans front-end.php
-- Améliorer le design global:
-- Ajout d'un effet hover sur les liens du menu et d'une transition
-- Ajout de padding sur le site web
-- Changement de couleur du site web
 
+- Améliorer la classe .blocflex
+- Création du modèle category.php
+- Améliorer l'affichage des articles « markdown »
 
 #### Références
 - https://github.com/vohoangphile

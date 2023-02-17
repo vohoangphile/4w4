@@ -1,6 +1,6 @@
 <?php
 /**
- * Pour afficher une page
+ * single.php est pour afficher une seule article
  * 
  */
 ?>

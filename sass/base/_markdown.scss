@@ -8,9 +8,22 @@ ol > li{
 
 }
 
+ul {
+    list-style-type: none;
+    
+}
+
 ul> li {}
 
 ol>li {}
+
+li::before {
+    content: "«";
+    background: lightgray;
+    border-radius: 1ch;
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+  }
 
 /* ------------------------------ pre */
 
