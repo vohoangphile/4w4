@@ -1,14 +1,15 @@
 <?php
 /**
- * single.php est pour afficher une seule article
+ * Modèle par défaut
  * 
  */
 ?>
+
+
 <?php get_header(); ?>
-
-
 <main>
-<h3>single.php</h3>
+<h3>search.php</h3>
+<h3>Résultats de la recherche</h3>
 <?php 
 /**
  * have_posts, c'est une fonction qui extrait un enregistrement et vérifier
@@ -19,8 +20,8 @@
  */
     if (have_posts()): 
         while (have_posts()) : the_post();
-            the_title('<h1>', '</h1>');
-            the_content(); ?>
+            the_title('<h4>', '</h4>');?>
+            <?= wp_trim_words(get_the_excerpt(), 50, " [...] "); ?>
             <hr>
         <?php endwhile;
     endif;

@@ -8,26 +8,33 @@ ol > li{
 
 }
 
-ul {
-    list-style-type: none;
+main ul {
+  list-style-type: none;
+  font-size: 1.2rem;
+  
+  padding: 0; // pour enlevez l'espacement à gauche
+  main li {
     
+  }
 }
 
-ul> li {}
 
 ol>li {}
 
-li::before {
-    content: "«";
-    background: lightgray;
-    border-radius: 1ch;
-    padding-inline: 1ch;
-    margin-inline-end: 1ch;
+
+main li::before {
+    content: "»";
+    background: rgb(48, 200, 255);
+    border-radius: 0.5rem;
+    padding-inline: 0.5rem;
+    margin-inline-end: 0.5rem;
   }
 
 /* ------------------------------ pre */
 
-pre {}//affichage du code barre de défilement
+pre {
+ 
+}//affichage du code barre de défilement
 
 code {}
 

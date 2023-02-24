@@ -391,27 +391,38 @@ a:hover {
   transition: 0.2s;
 }
 
-body main {
-  padding: 2rem 2rem;
+html {
+  width: 100%;
 }
 
-html {
-  width: 100vw;
-  overflow-x: hidden;
+body main {
+  padding: 1rem 1rem;
+}
+body main h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+body main h3 {
+  font-size: 1.5rem;
+}
+body main p {
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 /* Les balise qu'on utilise dans la conversion des fichiers markdown */
 /* Liste */
-ul {
+main ul {
   list-style-type: none;
+  font-size: 1.2rem;
+  padding: 0;
 }
-
-li::before {
-  content: "«";
-  background: lightgray;
-  border-radius: 1ch;
-  padding-inline: 1ch;
-  margin-inline-end: 1ch;
+main li::before {
+  content: "»";
+  background: rgb(48, 200, 255);
+  border-radius: 0.5rem;
+  padding-inline: 0.5rem;
+  margin-inline-end: 0.5rem;
 }
 
 /* ------------------------------ pre */
@@ -432,12 +443,16 @@ li::before {
 }
 
 .site__header {
-  width: 100%;
-  text-align: center;
-}
-
-.site__header__logo {
   background-color: rgb(0, 27, 40);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.site__header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
+.site__header h2 {
+  color: #fff;
 }
 
 .site__header__logo {
@@ -447,21 +462,18 @@ li::before {
 }
 
 .menu {
-  display: flex;
   list-style-type: none;
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
-.menu .menu-item {
-  color: rgb(0, 42, 85);
-}
 .menu .menu-item a {
+  font-size: 1.2rem;
+  padding: 20px 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: white;
-  font-size: 1rem;
   text-decoration: none;
   display: block;
-  padding: 5px 20px;
 }
 .menu .menu-item a:hover, .menu .menu-item a:focus {
   background-color: rgb(249, 255, 253);
@@ -469,18 +481,26 @@ li::before {
   transition: 0.5s;
 }
 
-/*.blocflex {
+@media screen and (min-width: 768px) {
+  .menu {
+    padding-right: 2rem;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    article {
-        flex: 1 1 200px;
-        border: 1px solid black;
-        padding: 10px;
-
-    }
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+  }
+  .recherche {
+    padding-top: 2.2rem;
+  }
+  .recherche .recherche__input {
+    width: 250px;
+    border-radius: 8px;
+  }
+  .logomenu {
+    padding-right: 2rem;
+    display: flex;
+  }
 }
-*/
 .blocflex {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -490,4 +510,10 @@ li::before {
 .blocflex article {
   border: 1px solid #aaa;
   padding: 1rem;
+}
+.blocflex article h2 {
+  font-size: 1.5rem;
+}
+.blocflex article p {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=style.css.map */

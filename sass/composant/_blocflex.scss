@@ -1,25 +1,20 @@
-/*.blocflex {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    article {
-        flex: 1 1 200px;
-        border: 1px solid black;
-        padding: 10px;
-
-    }
-}
-*/
 .blocflex {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    // Cette déclaration sera meilleur quand min() sera mieux supporté
-    // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    
+
     gap: 2rem;
     margin: 2rem;
   
     article {
       border: 1px solid #aaa;
       padding: 1rem;
+      h2{
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      
     }
   }
