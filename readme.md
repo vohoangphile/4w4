@@ -1,11 +1,11 @@
-# Laboratoire 3
+# TP1
 ## 4w4 - Conception d'interfac eet développement web
 ### auteur: Vo Hoang Phi Le
-#### Description
+#### L'objectif du TP1:
 
-- Recherche et « pre_get_posts »
-- Ajout d'un triage dans category.php
-- Amélioration de la classe .blocflex
+- Le design général permettra de mettre en valeur le progamme TIM du collège de Maisonneuve
+- Continuer de faire progresser votre thème
+- Déployer votre projet sur le serveur Siteground
 
 
 #### Références

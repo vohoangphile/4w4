@@ -1,0 +1,48 @@
+/**
+* Mise en page général avec display:grid
+*/
+.site__entete {
+    grid-area: header;
+    padding: 1rem clamp(1rem, 3vw, 20rem);
+    background-color: antiquewhite;
+  }
+  
+  .site__main {
+    grid-area: main;
+    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+  }
+  
+  .site__footer {
+    grid-area: footer;
+    background-color: antiquewhite;
+  }
+  .site__aside {
+    grid-area: aside;
+    background-color: rgb(47, 148, 210);
+  }
+
+  .site {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+    row-gap: 50px;
+    background-color: antiquewhite;
+    @media screen and (min-width: 1000px) {
+        .menu {
+            padding-right: 2rem;
+    
+            display: flex;
+            flex-direction: row;
+        }
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+        "header header"
+        "aside main"
+        //". main"  //le . permet au aside de s'étendre tout espace
+        "footer footer";
+    }
+  }
