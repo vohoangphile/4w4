@@ -10,6 +10,11 @@
         color: #fff;
     }
 }
+.recherche {
+  display: flex;
+  justify-content: center;
+    
+}
 .site__header__logo{
     display: flex;
     justify-content: space-between;
@@ -25,10 +30,11 @@
     .menu-item { //li
         a{
             font-size: 1.2rem;
-            padding: 20px 20px;
+            padding: 10px 20px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: white;
             text-decoration: none;
+            text-align: center;
             display : block;
             
         }
@@ -56,10 +62,8 @@
         list-style-type: none;
     }
     .recherche {
-        padding-top: 2.2rem;
         .recherche__input {
-            width: 250px;
-            border-radius: 8px;
+            width: 550px;
         }
     }
     .logomenu {

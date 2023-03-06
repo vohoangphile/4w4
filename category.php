@@ -9,30 +9,26 @@
 
 <?php get_header(); ?>
 <main class="site__main">
+
 <code>category.php</code>
+
    <section class="blocflex">
+   
       <?php
-      $category = get_queried_object();
+      // permet de afficher en bloc les notes de cours
+      $category = get_queried_object(); //permet extraire la requette http
       $args = array(
-         'category_name' => $category->slug,
-         'orderby' => 'title',
+         'category_name' => $category->slug, // slug permet de chercher le nom de la categorie
+         'orderby' => 'title', // permet de créer une requête sql
          'order' => 'ASC'
       );
-      
+// permet de faire une boucle pour toute afficher les blocs
       $query = new WP_Query( $args );
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post(); ?>
-            <article>
-               <?php 
-                $titre = get_the_title();
-               if ( $category -> slug == 'cours')
-               {
-                  $title = substr($titre, 0,7);
-               }
-               ?>
-               <h2><a href="<?php the_permalink(); ?>"> <?= $title ?></a></h2>
-               <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-            </article>
+         <?php /* get_template_part permet d'inclure un fichier avec du code
+          category -> slug peut avoir une de ces deux valeurs : "cours" ou "4w4" */ ?>
+          <?php get_template_part('template-parts/categorie',$category->slug); ?> 
          <?php endwhile; ?>
       <?php endif;
       wp_reset_postdata();?>
