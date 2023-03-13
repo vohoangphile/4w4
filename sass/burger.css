@@ -1,0 +1,16 @@
+/* ------------------------------------------ Bouton burger */
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+}
+@media screen and (min-width: 1000px) {
+  .burger {
+    display: none;
+  }
+}
+
+#chkMenu {
+  display: none;
+}/*# sourceMappingURL=burger.css.map */

@@ -442,9 +442,10 @@ main li::before {
   flex: 1 1 200px;
 }
 
+/* --------------------------------------------------- Entete de la page */
 .site__header {
   background-color: rgb(0, 27, 40);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .site__header h1 {
   text-align: center;
@@ -455,57 +456,96 @@ main li::before {
   color: #fff;
 }
 
-.recherche {
-  display: flex;
-  justify-content: center;
-}
-
 .site__header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu {
-  list-style-type: none;
+.menu__recherche {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .menu__recherche {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+/* -------------------------------------------------- menu-enetete */
+#chkMenu:checked ~ .menu-entete-container {
+  transform: translateX(0);
+}
+
+.menu-entete-container {
+  transform: translateX(300px);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 800px) {
+  .menu-entete-container {
+    transform: translateX(0);
+  }
+}
+.menu-entete-container .menu {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
-.menu .menu-item a {
+@media screen and (min-width: 800px) {
+  .menu-entete-container .menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+.menu-entete-container .menu .menu-item {
+  color: rgb(0, 42, 85);
+}
+.menu-entete-container .menu .menu-item a {
   font-size: 1.2rem;
-  padding: 10px 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: white;
-  text-decoration: none;
-  text-align: center;
   display: block;
+  padding: 5px 20px;
+  white-space: nowrap;
 }
-.menu .menu-item a:hover, .menu .menu-item a:focus {
-  background-color: rgb(249, 255, 253);
+.menu-entete-container .menu .menu-item a:hover, .menu-entete-container .menu .menu-item a:focus {
+  background-color: #fff;
   color: rgb(48, 200, 255);
   transition: 0.5s;
 }
 
-@media screen and (min-width: 768px) {
-  html {
-    width: 100%;
-  }
-  .menu {
-    padding-right: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    list-style-type: none;
-  }
-  .recherche .recherche__input {
-    width: 550px;
-  }
-  .logomenu {
-    padding-right: 2rem;
-    display: flex;
+/* //////////////////////////////////////////// Zone de recherche */
+.recherche {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* ------------------------------------------ Bouton burger */
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+}
+@media screen and (min-width: 800px) {
+  .burger {
+    display: none;
   }
 }
+
+#chkMenu {
+  display: none;
+}
+#chkMenu img {
+  color: #fff;
+}
+
 .blocflex {
   display: flex;
   justify-content: space-between;
@@ -531,6 +571,8 @@ main li::before {
   text-align: center;
   border: 1px solid #aaa;
   padding: 1rem;
+  border: 1px solid black;
+  margin: 2rem;
 }
 .blocflex__article h3, .blocflex__article h5, .blocflex__article h6, .blocflex__article p {
   margin: 0;
@@ -539,11 +581,9 @@ main li::before {
 
 .blocflex__galerie {
   flex: 1 0 100%;
-}
-
-/* --------------------------------------------- layout */
+} /* --------------------------------------------- layout */
 /**
-* Mise en page général avec display:grid
+*  Mise en page général avec display:grid
 */
 .site__header {
   grid-area: header;
@@ -568,28 +608,10 @@ main li::before {
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
-  row-gap: 50px;
 }
 @media screen and (min-width: 1000px) {
   .site {
     grid-template-columns: 20% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
-  }
-  .site .menu {
-    padding-right: 2rem;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .no aside {
-    grid-template-columns: auto;
-    grid-template-areas: "header" "aside" "main" "footer";
-  }
-  .no aside .menu {
-    padding-right: 2rem;
-    display: flex;
-    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */

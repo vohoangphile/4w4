@@ -2,6 +2,8 @@
   display : flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  
 }
 
 /*
@@ -24,6 +26,8 @@ align-items: center;
 text-align: center;
 border: 1px solid #aaa;
 padding: 1rem;
+border: 1px solid black;
+margin: 2rem;
 h3,h5,h6,p {
   margin:0;
   padding:0;
@@ -33,3 +37,4 @@ h3,h5,h6,p {
 .blocflex__galerie {
  flex: 1 0 100%;
 }
+

@@ -7,7 +7,7 @@
     // strpost($titre, '(')) permet de trouver la position du caractère ,'('
 ?>
 
-<article>
+<article class="blocflex__article">
     <h3><a href="<?php the_permalink(); ?>"> <?= $sigle ?></a></h3>
     <h5><?= $titre_long ?></h5>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>

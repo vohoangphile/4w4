@@ -1,64 +1,54 @@
 /**
-* Mise en page général avec display:grid
+*  Mise en page général avec display:grid
 */
+
 .site__header {
-    grid-area: header;
-    padding: 1rem clamp(1rem, 3vw, 20rem);
-    
-  }
-  
-  .site__main {
-    grid-area: main;
-    overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
-  }
-  
-  .site__footer {
-    grid-area: footer;
-    
-  }
-  .site__aside {
-    grid-area: aside;
-    background-color: rgb(47, 148, 210);
-  }
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+}
 
-  .site {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas:
-      "header"
-      "aside"
-      "main"
-      "footer";
-    row-gap: 50px;
-    
-    @media screen and (min-width: 1000px) {
-        .menu {
-            padding-right: 2rem;
-    
-            display: flex;
-            flex-direction: row;
-        }
-        grid-template-columns: 20% auto;
-        grid-template-areas:
-        "header header"
-        "aside main"
-        //". main"  //le . permet au aside de s'étendre tout espace
-        "footer footer";
-    }
-  }
-.no aside {
-  @media screen and (min-width: 1000px) {
-    .menu {
-      padding-right: 2rem;
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
 
-      display: flex;
-      flex-direction: row;
-  }
+.site__footer {
+  grid-area: footer;
+}
+.site__aside {
+  grid-area: aside;
+  background-color: rgb(47, 148, 210);
+}
+
+.site {
+  display: grid;
   grid-template-columns: auto;
   grid-template-areas:
-  "header"
-  "aside"
-  "main"
-  "footer";
+    "header"
+    "aside"
+    "main"
+    "footer";
+  // row-gap: 50px;
+ 
+  @media screen and (min-width: 1000px) {
+      grid-template-columns: 20% auto;
+      grid-template-areas:
+      "header header"
+      "aside main"
+     /*  ". main" */
+      "footer footer";
+      
   }
 }
+
+// .no-aside {
+//   @media screen and (min-width: 1000px) {
+
+//   grid-template-columns: auto;
+//   grid-template-areas:
+//   "header"
+//   "aside"
+//   "main"
+//   "footer";
+//   }
+// }
