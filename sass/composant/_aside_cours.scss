@@ -1,0 +1,30 @@
+.menu-cours-container { // nav
+    .menu { // ul
+        display: flex;
+        flex-direction: row;
+        @media screen and (min-width: $largeur__bureau){
+            flex-direction: column;
+        }
+        .menu-item { // li
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            a {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .cours__code {
+                    display: block;
+                    white-space: nowrap;
+                    padding-right: 5px;
+                }
+                .cours__p{
+                    display: none;
+                    @media screen and (min-width:$largeur__bureau) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

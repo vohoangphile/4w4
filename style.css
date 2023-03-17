@@ -395,9 +395,6 @@ html {
   width: 100%;
 }
 
-body main {
-  padding: 1rem 1rem;
-}
 body main h1 {
   font-size: 2rem;
   text-align: center;
@@ -431,29 +428,22 @@ main li::before {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 20vh;
   font-size: 2rem;
-  color: #aaa;
-  background-color: black;
+  background-color: rgb(24, 24, 24);
 }
 
 .site__footer section {
-  border: 1px solid #aaa;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #fff;
   flex: 1 1 200px;
 }
 
 /* --------------------------------------------------- Entete de la page */
 .site__header {
-  background-color: rgb(0, 27, 40);
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-.site__header h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #fff;
-}
-.site__header h2 {
-  color: #fff;
+  overflow-x: hidden;
 }
 
 .site__header__logo {
@@ -491,33 +481,30 @@ main li::before {
     transform: translateX(0);
   }
 }
-.menu-entete-container .menu {
+.menu-entete-container #menu {
   display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
   flex-direction: column;
   list-style-type: none;
   align-items: flex-end;
   justify-content: flex-start;
 }
 @media screen and (min-width: 800px) {
-  .menu-entete-container .menu {
+  .menu-entete-container #menu {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
   }
 }
-.menu-entete-container .menu .menu-item {
+.menu-entete-container #menu .menu-item {
   color: rgb(0, 42, 85);
 }
-.menu-entete-container .menu .menu-item a {
-  font-size: 1.2rem;
+.menu-entete-container #menu .menu-item a {
   display: block;
   padding: 5px 20px;
   white-space: nowrap;
-}
-.menu-entete-container .menu .menu-item a:hover, .menu-entete-container .menu .menu-item a:focus {
-  background-color: #fff;
-  color: rgb(48, 200, 255);
-  transition: 0.5s;
 }
 
 /* //////////////////////////////////////////// Zone de recherche */
@@ -526,6 +513,9 @@ main li::before {
   flex-wrap: nowrap;
 }
 
+/* --------------------------------------------------- Entete de la page */
+/* -------------------------------------------------- menu-enetete */
+/* //////////////////////////////////////////// Zone de recherche */
 /* ------------------------------------------ Bouton burger */
 .burger {
   display: flex;
@@ -541,9 +531,6 @@ main li::before {
 
 #chkMenu {
   display: none;
-}
-#chkMenu img {
-  color: #fff;
 }
 
 .blocflex {
@@ -581,7 +568,42 @@ main li::before {
 
 .blocflex__galerie {
   flex: 1 0 100%;
-} /* --------------------------------------------- layout */
+}
+
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-cours-container .menu .menu-item a .cours__code {
+  display: block;
+  white-space: nowrap;
+  padding-right: 5px;
+}
+.menu-cours-container .menu .menu-item a .cours__p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a .cours__p {
+    display: block;
+  }
+}
+
+/* --------------------------------------------- layout */
 /**
 *  Mise en page général avec display:grid
 */
@@ -605,13 +627,25 @@ main li::before {
 }
 
 .site {
+  max-width: 100vw;
+  overflow-x: hidden;
   display: grid;
   grid-template-columns: auto;
   grid-template-areas: "header" "aside" "main" "footer";
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 20% auto;
+    grid-template-columns: 25% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
+  }
+}
+
+.no-aside {
+  grid-template-areas: "header" "main" "footer";
+}
+@media screen and (min-width: 1000px) {
+  .no-aside {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
   }
 }/*# sourceMappingURL=style.css.map */

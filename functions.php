@@ -35,7 +35,9 @@ function personnalisation_menu_item_title($title, $item, $args, $depth) {
     // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
     if($args->menu == 'cours') {
 // Modifier la longueur du titre en fonction de vos besoins
-$title = wp_trim_words($title, 3, ' ... '); // on garde uniquement 3 mots pour le titre du choix
+$sigle = substr($title, 4,4);
+$title = substr($title,7);
+$title = "<code class='cours__code'> " . $sigle . "</code>" . "<p class='cours__p'>" . wp_trim_words($title, 1, ' ... '). "</p>"; // on garde uniquement 3 mots pour le titre du choix
 }
 return $title;
 }
@@ -43,6 +45,9 @@ add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);
 
 
 add_theme_support( 'post-thumbnails' ); // récupère une image qu'on mit sur une article ou autre
+add_theme_support('custom-background');
+add_theme_support('widgets');
+add_theme_support('widgets-block-editor');
 
 
 /**
