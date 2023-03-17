@@ -381,7 +381,9 @@ p {
 
 /* --------------------------------------------- link */
 a {
-  color: rgb(44, 182, 233);
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 a:visited {
   color: rgb(44, 182, 233);
@@ -389,6 +391,10 @@ a:visited {
 a:hover {
   color: rgb(255, 186, 75);
   transition: 0.2s;
+}
+
+.menu-entete a {
+  color: rgb(44, 182, 233);
 }
 
 html {
@@ -429,21 +435,57 @@ main li::before {
   justify-content: space-between;
   flex-wrap: wrap;
   font-size: 2rem;
-  background-color: rgb(24, 24, 24);
+  background: rgb(6, 147, 227);
+  background: linear-gradient(180deg, rgb(6, 147, 227) 0%, rgb(4, 4, 69) 100%);
 }
 
 .site__footer section {
   color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: 1px solid #fff;
   flex: 1 1 200px;
+  padding-top: 1rem;
+}
+
+.menu-tim-container {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+.menu-tim-container h3 {
+  font-size: 2rem;
+}
+.menu-tim-container li {
+  list-style: none;
+}
+.menu-tim-container a {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.site__footer__icons h3 {
+  font-size: 2rem;
+}
+.site__footer__icons img {
+  padding: 0.6rem;
 }
 
 /* --------------------------------------------------- Entete de la page */
 .site__header {
-  overflow-x: hidden;
+  background-color: rgb(0, 27, 40);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.site__header .blogTitre a {
+  font-size: 3rem;
+}
+.site__header h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
 }
 
 .site__header__logo {
@@ -459,14 +501,6 @@ main li::before {
   flex-direction: column-reverse;
   justify-content: center;
 }
-@media screen and (min-width: 1000px) {
-  .menu__recherche {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-
 /* -------------------------------------------------- menu-enetete */
 #chkMenu:checked ~ .menu-entete-container {
   transform: translateX(0);
@@ -479,43 +513,42 @@ main li::before {
 @media screen and (min-width: 800px) {
   .menu-entete-container {
     transform: translateX(0);
+    align-items: center;
+    justify-content: flex-end;
   }
 }
-.menu-entete-container #menu {
+.menu-entete-container .menu {
   display: flex;
   position: absolute;
   top: 0;
   right: 0;
+  background-color: aliceblue;
   flex-direction: column;
   list-style-type: none;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-start;
 }
 @media screen and (min-width: 800px) {
-  .menu-entete-container #menu {
+  .menu-entete-container .menu {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
   }
 }
-.menu-entete-container #menu .menu-item {
-  color: rgb(0, 42, 85);
+.menu-entete-container .menu .menu-item {
+  list-style: none;
 }
-.menu-entete-container #menu .menu-item a {
+.menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
   white-space: nowrap;
 }
 
-/* //////////////////////////////////////////// Zone de recherche */
 .recherche {
   display: flex;
   flex-wrap: nowrap;
 }
 
-/* --------------------------------------------------- Entete de la page */
-/* -------------------------------------------------- menu-enetete */
-/* //////////////////////////////////////////// Zone de recherche */
 /* ------------------------------------------ Bouton burger */
 .burger {
   display: flex;
@@ -539,16 +572,6 @@ main li::before {
   flex-wrap: wrap;
 }
 
-/*
-.blocflex {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  // Cette déclaration sera meilleur quand min() sera mieux supporté
-  // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
-  gap: 2rem;
-  margin: 2rem;
-}
-*/
 .blocflex__article {
   display: flex;
   flex: 1 0 300px;
@@ -556,10 +579,10 @@ main li::before {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  border: 1px solid #aaa;
   padding: 1rem;
-  border: 1px solid black;
-  margin: 2rem;
+  border: 2px solid rgb(44, 182, 233);
+  margin: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .blocflex__article h3, .blocflex__article h5, .blocflex__article h6, .blocflex__article p {
   margin: 0;
@@ -623,7 +646,11 @@ main li::before {
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(47, 148, 210);
+  background-color: #8ed1fc;
+}
+.site__aside h3 {
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 .site {
@@ -648,4 +675,13 @@ main li::before {
     grid-template-columns: auto;
     grid-template-areas: "header" "main" "footer";
   }
+}
+
+#menu-4w4 a {
+  color: rgb(0, 0, 0);
+}
+#menu-4w4 li {
+  padding: 0.8rem;
+  list-style: none;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

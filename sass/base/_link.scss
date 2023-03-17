@@ -1,7 +1,11 @@
 /* --------------------------------------------- link */
 
 a{
-    color : rgb(44, 182, 233);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    
+    
 
     &:visited {
         color: rgb(44, 182, 233);
@@ -10,4 +14,7 @@ a{
         color: rgb(255, 186, 75);
         transition: 0.2s;
     }
+}
+.menu-entete a {
+    color : rgb(44, 182, 233);
 }

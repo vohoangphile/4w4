@@ -30,10 +30,12 @@
                     "container" => "nav"
                 )) ?>
             <?php get_search_form() ?>
-            <label class="burger" for="chkMenu"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=fff" width="20" height="20"></label>
+            <label class="burger" for="chkMenu"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=fff" width="50" height="50"></label>
             </div>
         </section>
+    <div class="blogTitre">
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
+    </div>
     <h1>Bienvenue dans le cours de 4W4</h1>
     <h2 style="text-align: center;"><?= bloginfo('description') ?></h2>
     </header>   

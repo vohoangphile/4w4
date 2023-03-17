@@ -5,6 +5,8 @@
 .site__header {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
+
+  
  
 }
 
@@ -18,8 +20,13 @@
 
 }
 .site__aside {
+  h3 {
+   
+    font-size: 1.6rem;
+    text-align: center;
+  }
   grid-area: aside;
-  background-color: rgb(47, 148, 210);
+  background-color: #8ed1fc;
 }
 
 .site {
@@ -55,4 +62,17 @@
     "main"
     "footer";
 }
+ 
 }
+#menu-4w4  {
+  a{
+  color: rgb(0, 0, 0);
+  }
+  li {
+    padding: 0.8rem;
+    list-style: none;
+    text-decoration: none;
+    
+  }
+}
+

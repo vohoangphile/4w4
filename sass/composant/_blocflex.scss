@@ -6,17 +6,6 @@
   
 }
 
-/*
-.blocflex {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  // Cette déclaration sera meilleur quand min() sera mieux supporté
-  // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
-  gap: 2rem;
-  margin: 2rem;
-}
-*/
-
 .blocflex__article {
 display: flex;
 flex: 1 0 300px;
@@ -24,10 +13,10 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 text-align: center;
-border: 1px solid #aaa;
 padding: 1rem;
-border: 1px solid black;
-margin: 2rem;
+border: 2px solid rgb(44, 182, 233);
+margin: 0.4rem;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 h3,h5,h6,p {
   margin:0;
   padding:0;

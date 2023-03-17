@@ -5,16 +5,42 @@
     
    
     font-size: 2rem;
-    background-color: rgb(24, 24, 24);
+    background: rgb(6,147,227);
+    background: linear-gradient(180deg, rgba(6,147,227,1) 0%, rgba(4,4,69,1) 100%);
 
-   
+    
 }
 
 .site__footer section {
     color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border: 1px solid #fff;
     flex: 1 1 200px;
+    padding-top: 1rem;
+}
+.menu-tim-container {
+    h3 {
+        font-size: 2rem;
+    }
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+    li {
+        list-style: none;
+    }
+    a{
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+    }
+}
+.site__footer__icons {
+    h3{
+        font-size: 2rem;
+    }
+    img {
+        padding: 0.6rem;
+    }
 }
