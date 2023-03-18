@@ -2,12 +2,11 @@
   display : flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  
 }
 
 .blocflex__article {
 display: flex;
+flex-wrap: wrap;
 flex: 1 0 300px;
 flex-direction: column;
 justify-content: space-between;
