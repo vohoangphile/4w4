@@ -13,7 +13,7 @@ overflow-x: hidden;
     font-size: 3rem;
  }
  h1{
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    
     text-align: center;
     font-size: 2rem;
     color: #fff;
@@ -93,5 +93,24 @@ overflow-x: hidden;
     .recherche {
         display : flex;
         flex-wrap: nowrap;
+        
+        ::placeholder{
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+           
+        }
+        input {
+            border-radius: 0.5rem;
+            border: 2px solid #ccc;
+            padding: 0.6rem;
+            border-radius: 5px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #6ab4ff;
+            box-shadow: 0 0 5px rgba(106, 180, 255, 0.5);
+        }
+       
     }
+    
+    
 
