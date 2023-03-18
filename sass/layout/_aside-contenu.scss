@@ -39,14 +39,11 @@
     "aside"
     "main"
     "footer";
-  // row-gap: 50px;
-  // background-color: rgb(146, 235, 121);
   @media screen and (min-width: $largeur__bureau) {
       grid-template-columns: 25% auto;
       grid-template-areas:
       "header header"
       "aside main"
-     /*  ". main" */
       "footer footer";
   }
 }

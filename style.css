@@ -520,6 +520,7 @@ main li::before {
   flex-direction: column-reverse;
   justify-content: center;
 }
+
 /* -------------------------------------------------- menu-enetete */
 #chkMenu:checked ~ .menu-entete-container {
   transform: translateX(0);

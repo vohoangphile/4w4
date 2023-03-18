@@ -9,37 +9,28 @@ overflow-x: hidden;
     color: #fff;
  }
  .blogTitre a {
-    
     font-size: 3rem;
  }
  h1{
-    
     text-align: center;
     font-size: 2rem;
     color: #fff;
  }
-
-
 }
 
+// Logo
 .site__header__logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+// positionnement de la barre de recherche
 .menu__recherche {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column-reverse;
     justify-content: center;
-
-    @media screen and (min-width: $largeur__bureau) {
-        // flex-direction: row;
-        // align-items: center;
-        // justify-content: flex-end;
-    }
 }
 
 /* -------------------------------------------------- menu-enetete */
@@ -63,9 +54,6 @@ overflow-x: hidden;
         top: 0;
         right: 0;
         background-color: aliceblue;
-        
-     
-        
         flex-direction: column; 
         list-style-type: none;
         align-items: center;
@@ -75,14 +63,10 @@ overflow-x: hidden;
            flex-direction: row; 
            align-items: center;
            justify-content: flex-end;
-           
-
         }
         .menu-item { //li
-            
             list-style: none;
             a {
-            
             display : block;
             padding : 5px 20px;
             white-space: nowrap;
@@ -90,13 +74,12 @@ overflow-x: hidden;
         }
     }
     }
+    // Design de la barre de recherche
     .recherche {
         display : flex;
         flex-wrap: nowrap;
-        
         ::placeholder{
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-           
         }
         input {
             border-radius: 0.5rem;
