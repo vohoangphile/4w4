@@ -507,6 +507,11 @@ main li::before {
   color: #fff;
 }
 
+@media screen and (min-width: 1000px) {
+  h3.resultat {
+    font-size: 4rem;
+  }
+}
 .site__header__logo {
   display: flex;
   justify-content: space-between;
@@ -581,6 +586,16 @@ main li::before {
   outline: none;
   border-color: #6ab4ff;
   box-shadow: 0 0 5px rgba(106, 180, 255, 0.5);
+}
+
+.contenu__cours {
+  background-color: #6ab4ff;
+}
+.contenu__cours h4 {
+  font-size: 2rem;
+}
+.contenu__cours p {
+  font-weight: bold;
 }
 
 /* ------------------------------------------ Bouton burger */
@@ -697,7 +712,6 @@ main li::before {
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 25% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }

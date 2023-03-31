@@ -71,6 +71,7 @@ function cidweb_modifie_requete_principal( $query ) {
       }
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+     
      //add_action équivalent à un écouteur d'événement addevent...
      //pre_get_posts c'est un hook équivalent à un événement dans JS
      //cidweb_modifie_requete_principal function de rappel

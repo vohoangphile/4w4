@@ -17,6 +17,12 @@ overflow-x: hidden;
     color: #fff;
  }
 }
+@media screen and (min-width:1000px) {
+    h3.resultat  {
+        font-size: 4rem;
+    }
+}
+
 
 // Logo
 .site__header__logo {
@@ -47,6 +53,7 @@ overflow-x: hidden;
         align-items: center;
         justify-content: flex-end;
     }
+    
 
     .menu{ // ul
         display : flex;
@@ -94,6 +101,15 @@ overflow-x: hidden;
         }
        
     }
+.contenu__cours {
+    background-color: #6ab4ff;
+    h4{
+        font-size: 2rem;
+    }
+    p{
+        font-weight: bold;
+    }
+}
     
     
 

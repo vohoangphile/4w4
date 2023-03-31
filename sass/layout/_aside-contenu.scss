@@ -40,7 +40,7 @@
     "main"
     "footer";
   @media screen and (min-width: $largeur__bureau) {
-      grid-template-columns: 25% auto;
+      // grid-template-columns: 25% auto;
       grid-template-areas:
       "header header"
       "aside main"

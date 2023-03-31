@@ -39,7 +39,7 @@
     <h2 style="text-align: center;"><?= bloginfo('description') ?></h2>
     </header>   
     <?php 
-    if ( ! is_front_page()  && is_search() ) {
+    if ( ! is_front_page()  && !is_search() ) {
         get_template_part("template-parts/aside");
     }
     
