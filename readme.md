@@ -1,13 +1,15 @@
 # TP1
 ## 4w4 - Conception d'interfac eet développement web
 ### auteur: Vo Hoang Phi Le
-#### L'objectif du TP1:
+#### L'objectif de l'intra:
 
-- Le design général permettra de mettre en valeur le progamme TIM du collège de Maisonneuve
-- Continuer de faire progresser votre thème
-- Déployer votre projet sur le serveur Siteground
+- Adapter le modèle search.php pour reproduire une maquêtte
+- Ajout de media querries
+- Création d'au moins 5 commits pour chaque étape
 
 
 #### Références
 - https://github.com/vohoangphile
 - https://cidweb11.sg-host.com/
+
+
