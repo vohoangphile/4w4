@@ -9,11 +9,7 @@
 
 <?php get_header(); ?>
 <main class="site__main">
-
-
-
    <section class="blocflex">
-   
       <?php
       // permet de afficher en bloc les notes de cours
       $category = get_queried_object(); //permet extraire la requette http
@@ -23,7 +19,7 @@
          'order' => 'ASC'
       );
 // permet de faire une boucle pour toute afficher les blocs
-      $query = new WP_Query( $args );
+      $query = new WP_Query( $args ); 
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post(); ?>
          <?php /* get_template_part permet d'inclure un fichier avec du code

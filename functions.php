@@ -38,6 +38,9 @@ function personnalisation_menu_item_title($title, $item, $args, $depth) {
 $sigle = substr($title, 4,4);
 $title = substr($title,7);
 $title = "<code class='cours__code'> " . $sigle . "</code>" . "<p class='cours__p'>" . wp_trim_words($title, 1, ' ... '). "</p>"; // on garde uniquement 3 mots pour le titre du choix
+if($args->menu == '4w4'){
+    if(substr($title,0,1) == "0"){$title = substr($title,1);}
+}
 }
 return $title;
 }
@@ -60,7 +63,7 @@ add_theme_support('widgets-block-editor');
 // affiche les notes de cours en ascendants seulement dans la page accueil
 function cidweb_modifie_requete_principal( $query ) {
     if (    $query->is_home()  // page accueil
-            && $query->is_main_query() 
+            && $query->is_main_query() // requête principal
             && ! is_admin() ) { // Assure qu'on n'est pas dans une page admin
       $query->set( 'category_name', '4w4' ); // correspond au slug 
       $query->set( 'orderby', 'title' );
@@ -68,3 +71,6 @@ function cidweb_modifie_requete_principal( $query ) {
       }
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
+     //add_action équivalent à un écouteur d'événement addevent...
+     //pre_get_posts c'est un hook équivalent à un événement dans JS
+     //cidweb_modifie_requete_principal function de rappel
