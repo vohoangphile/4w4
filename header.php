@@ -15,12 +15,11 @@
 // }
 
 ?>
-<!-- <body class="site <?= $nouvelle_classe?>"> -->
+
 <body>
 <div class= "site <?php echo (is_front_page()? ' no-aside': '');?>" >
-
-
-    <header class="site__header">
+ 
+<header class="site__header">
         <section class="site__header__logo">
             <?php the_custom_logo() ?>
             <div class="menu__recherche">
@@ -40,7 +39,7 @@
     <h2 style="text-align: center;"><?= bloginfo('description') ?></h2>
     </header>   
     <?php 
-    if ( ! is_front_page()) {
+    if ( ! is_front_page()  && is_search() ) {
         get_template_part("template-parts/aside");
     }
     
