@@ -17,7 +17,7 @@
 ?>
 
 <body>
-<div class= "site <?php echo (is_front_page()? ' no-aside': '');?>" >
+<div class= "site <?php echo (is_front_page()|| is_search() ? ' no-aside': '');?>">
  
 <header class="site__header">
         <section class="site__header__logo">
@@ -39,7 +39,7 @@
     <h2 style="text-align: center;"><?= bloginfo('description') ?></h2>
     </header>   
     <?php 
-    if ( ! is_front_page()  && !is_search() ) {
+    if ( !is_front_page() && !is_search() ) {
         get_template_part("template-parts/aside");
     }
     
