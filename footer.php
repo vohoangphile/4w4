@@ -20,6 +20,11 @@
             
         </div>
     </section>
+    <section>
+    <div class="sidebar">
+    <?php dynamic_sidebar( 'footer_1' ); ?> <!-- Correspond au id dans la function sidebar-->
+    </div>
+    </section>
 </footer>
 <?php wp_footer(); ?>
 </div>
