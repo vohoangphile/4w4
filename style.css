@@ -465,6 +465,23 @@ main li::before {
   padding-top: 1rem;
 }
 
+.pied__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 745px) {
+  .site__footer {
+    justify-content: space-around;
+  }
+  .pied__2 {
+    flex-wrap: nowrap;
+  }
+  .pied__2 img {
+    margin: 0.3rem;
+  }
+}
 .menu-tim-container {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;

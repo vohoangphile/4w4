@@ -1,11 +1,9 @@
-# TP1
+# Labo 5
 ## 4w4 - Conception d'interfac eet développement web
 ### auteur: Vo Hoang Phi Le
-#### L'objectif du TP1:
+#### Widget
 
-- Le design général permettra de mettre en valeur le progamme TIM du collège de Maisonneuve
-- Continuer de faire progresser votre thème
-- Déployer votre projet sur le serveur Siteground
+- Intégration de widgets
 
 
 #### Références

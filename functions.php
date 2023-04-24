@@ -78,8 +78,8 @@ function cidweb_modifie_requete_principal( $query ) {
 // Enregistrer le sidebar
 function enregistrer_sidebar() {
     register_sidebar( array(
-        'name' => __( 'Sidebar', '4w4-phi-le' ),
-        'id' => 'footer', // c'est comme le slug
+        'name' => __( 'Footer 1', '4w4-phi-le' ),
+        'id' => 'footer_1', // c'est comme le slug
         'description' => __( 'Une zone pour afficher des widgets dans le footer.', '4w4-phi-le' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
@@ -88,8 +88,18 @@ function enregistrer_sidebar() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Sidebar', '4w4-phi-le' ),
+        'name' => __( 'Footer 2', '4w4-phi-le' ),
         'id' => 'footer_2', // c'est comme le slug
+        'description' => __( 'Une zone pour afficher des widgets dans le footer.', '4w4-phi-le' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Footer 3', '4w4-phi-le' ),
+        'id' => 'footer_3', // c'est comme le slug
         'description' => __( 'Une zone pour afficher des widgets dans le footer.', '4w4-phi-le' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',

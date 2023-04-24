@@ -17,14 +17,22 @@
             <a href="https://www.linkedin.com/in/vo-hoang-phi-le-b7267a252/">
                 <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=fff" width="50" height="50">
             </a>
-            
         </div>
     </section>
-    <section>
-    <div class="sidebar">
-    <?php dynamic_sidebar( 'footer_1' ); ?> <!-- Correspond au id dans la function sidebar-->
+    <div class="pied__2">
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'footer_1' ); ?> <!-- Correspond au id dans la function sidebar-->
+        </div>
+    
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'footer_2' ); ?> <!-- Correspond au id dans la function sidebar-->
+        </div>
+    
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'footer_3' ); ?> <!-- Correspond au id dans la function sidebar-->
+        </div>
     </div>
-    </section>
+   
 </footer>
 <?php wp_footer(); ?>
 </div>
