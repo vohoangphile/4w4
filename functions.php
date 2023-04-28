@@ -29,6 +29,9 @@ add_theme_support('custom-logo',array(
     'height' => 150,
     'width'  => 150,
 ) );
+add_theme_support( 'post-thumbnails' );
+add_theme_support('custom-background');
+
 /*-------------------------------------- Modification des choix du menu cours */
 // la fonction permet couper des mots du menu 4w4
 function personnalisation_menu_item_title($title, $item, $args, $depth) {

@@ -11,6 +11,16 @@
 ?>
 <?php get_header(); ?>
 <main>
+
+    <section class="blocflex">
+        <?php 
+            wp_nav_menu(array(
+            "menu" => "evenement",
+            "container" => "nav"
+        ))
+        ?>
+    </section>
+    <section class="blocflex"></section>
     
     <section class="blocflex">
     <?php

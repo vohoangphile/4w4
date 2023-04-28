@@ -2,6 +2,9 @@
   display : flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: rgba(255,255, 255, .1);
+  min-height: 100vh;
+
 }
 
 .blocflex__article {

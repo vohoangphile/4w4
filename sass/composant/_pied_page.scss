@@ -1,6 +1,6 @@
 .site__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     
    
@@ -23,7 +23,7 @@
 }
 .pied__2 {
     display: flex;
-    
+    flex-direction: column;
     justify-content: center;
     align-items: center;
    
@@ -34,6 +34,7 @@
         justify-content: space-around
     }
     .pied__2 {
+        flex-direction: row;
         flex-wrap: nowrap;
         img  {
             margin: 0.3rem;

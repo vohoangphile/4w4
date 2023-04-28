@@ -1,0 +1,14 @@
+.menu-evenement-container { //nav
+    .menu { //ul
+        .menu-item { //li
+            display: flex;
+            flex-direction: column;
+            border : 3px solid #aaa;
+            height : 100px;
+            a {
+                font-size: 2rem;
+            }
+
+        }
+    }
+}

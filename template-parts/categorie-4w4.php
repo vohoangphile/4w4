@@ -13,6 +13,18 @@ $titre = get_the_title();
     // strpost($titre, '(')) permet de trouver la position du caractère ,'('*/
 ?>
 <article class="blocflex__article">
+    <!-- Afficher des thumbnail dans les blocs, il fait ajouter les images
+         dans image mise en avant -->
+    <?php 
+    if(has_post_thumbnail()){
+        the_post_thumbnail('thumbnail');
+        echo get_the_ID();
+    }
+    else
+    {
+        echo get_the_post_thumbnail(3, 'thumbnail');
+    }
+    ?>
     <h2><a href="<?php the_permalink(); ?>"> <?= $titre ?></a></h2>
     <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
 </article>
