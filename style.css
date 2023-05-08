@@ -682,14 +682,38 @@ main li::before {
   }
 }
 
+.menu-evenement-container .menu {
+  display: flex;
+  justify-content: space-between;
+}
 .menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
-  border: 3px solid #aaa;
-  height: 100px;
+  border: 3px solid #0080ff;
 }
 .menu-evenement-container .menu .menu-item a {
   font-size: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.menu-evenement-container .menu .menu-item a .title {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.menu-evenement-container .menu .menu-item a .description {
+  font-size: 1rem;
+}
+.menu-evenement-container .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: 2rem;
+}
+.menu-evenement-container .menu .menu-item .menu__item__evenement {
+  display: inline-block;
 }
 
 /* --------------------------------------------- layout */
