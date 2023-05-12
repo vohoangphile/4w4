@@ -1,5 +1,8 @@
 .menu-evenement-container { //nav
     // background-color: aqua;
+.menu-bloc-archive-container {
+    
+}
     .menu { //ul
         display: flex;
         justify-content: space-between;
@@ -15,7 +18,7 @@
                 align-items: center;
                 text-align: center;
                 .title {
-                    display: block;
+                    // display: block;
                     font-size: 1.3rem;
                     font-weight: 500;
                    
@@ -27,8 +30,9 @@
                     display: block;
                     width: 150px;
                     height: 150px;
-                    margin-left: 2rem;
+                    // margin-left: 2rem;
                 }
+                
             }
             .menu__item__evenement {
                 display: inline-block;
@@ -36,4 +40,18 @@
 
         }
     }
+}
+.menu-evenement-container .menu a {
+    display: flex;
+    justify-content: center;
+}
+.menu-bloc-archive-container .menu .menu-item a {
+    background-repeat: no-repeat;
+    display: block;
+}
+.bloc__cours a {
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
+}
+.bloc__4w4{
+    background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=academic-cap');
 }

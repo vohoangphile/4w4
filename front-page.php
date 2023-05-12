@@ -14,10 +14,14 @@
 
     <section class="blocflex">
         <?php 
-            wp_nav_menu(array(
-            "menu" => "evenement",
+        wp_nav_menu(array(
+        "menu" => "evenement",
+        "container" => "nav"
+        ));
+        wp_nav_menu(array(
+            "menu" => "bloc-archive",
             "container" => "nav"
-        ))
+        ));
         ?>
     </section>
     <section class="blocflex"></section>

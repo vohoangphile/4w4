@@ -624,7 +624,7 @@ main li::before {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.1);
-  min-height: 100vh;
+  min-height: 40vh;
 }
 
 .blocflex__article {
@@ -699,7 +699,6 @@ main li::before {
   text-align: center;
 }
 .menu-evenement-container .menu .menu-item a .title {
-  display: block;
   font-size: 1.3rem;
   font-weight: 500;
 }
@@ -710,10 +709,27 @@ main li::before {
   display: block;
   width: 150px;
   height: 150px;
-  margin-left: 2rem;
 }
 .menu-evenement-container .menu .menu-item .menu__item__evenement {
   display: inline-block;
+}
+
+.menu-evenement-container .menu a {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-bloc-archive-container .menu .menu-item a {
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.bloc__cours a {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
+}
+
+.bloc__4w4 {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=academic-cap");
 }
 
 /* --------------------------------------------- layout */

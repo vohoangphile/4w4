@@ -1,7 +1,7 @@
-# Labo 5
+# TP2
 ## 4w4 - Conception d'interfac eet développement web
 ### auteur: Vo Hoang Phi Le
-#### Widget
+#### L'objectif du TP2 :
 
 - Intégration de widgets
 
