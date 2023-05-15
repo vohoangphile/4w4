@@ -1,35 +1,32 @@
 <footer class="site__footer">
     <section>
         <?php the_custom_logo() ?>
+        <span>4W4 - TIM 2023</span>
     </section>
-    <section>
-        <?php wp_nav_menu(array(
-                    "menu" => "tim", // on a définit le nom, fait control et clokc sur wp_nav_menu pour comprendre
-                    "container" => "nav"
-                )) ?>
-     </section>
-    <section class="site__footer__icons">
+     <section class="site__footer__icons">
         <h3>Réseaux sociaux</h3>
         <div class="icones-sociaux">
             <a href="https://github.com/vohoangphile">
-                <img src="https://s2.svgbox.net/social.svg?ic=github&color=fff" width="50" height="50">
+                <img src="https://s2.svgbox.net/social.svg?ic=github&color=fff" width="40" height="40">
             </a>
             <a href="https://www.linkedin.com/in/vo-hoang-phi-le-b7267a252/">
-                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=fff" width="50" height="50">
+                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=fff" width="40" height="40">
+            </a>
+            <a>
+                <img src="https://s2.svgbox.net/social.svg?ic=twitter&color=fff" width="40" height="40">
             </a>
         </div>
+        <?php wp_nav_menu(array(
+        "menu" => "tim", // on a définit le nom, fait control et clokc sur wp_nav_menu pour comprendre
+        "container" => "nav"
+        )) ?>
     </section>
     <div class="pied__2">
-        <div class="sidebar">
+        <div class="sidebar1">
             <?php dynamic_sidebar( 'footer_1' ); ?> <!-- Correspond au id dans la function sidebar-->
         </div>
-    
-        <div class="sidebar">
+        <div class="sidebar2">
             <?php dynamic_sidebar( 'footer_2' ); ?> <!-- Correspond au id dans la function sidebar-->
-        </div>
-    
-        <div class="sidebar">
-            <?php dynamic_sidebar( 'footer_3' ); ?> <!-- Correspond au id dans la function sidebar-->
         </div>
     </div>
    
