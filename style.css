@@ -646,7 +646,7 @@ img.custom-logo {
   }
 }
 .recherche .recherche__bouton {
-  background-color: #e6ccfe;
+  background-color: rgba(189, 118, 255, 0.2980392157);
   border: none;
 }
 .recherche input:focus {
@@ -705,6 +705,7 @@ img.custom-logo {
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu {

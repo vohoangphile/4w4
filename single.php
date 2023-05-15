@@ -5,10 +5,7 @@
  */
 ?>
 <?php get_header(); ?>
-
-
 <main>
-
 <?php 
 /**
  * have_posts, c'est une fonction qui extrait un enregistrement et vérifier
@@ -20,7 +17,6 @@
     if (have_posts()): 
         while (have_posts()) : the_post();
             the_title('<h1>', '</h1>');
-            
             the_content(); ?>
             <hr>
         <?php endwhile;

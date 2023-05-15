@@ -18,6 +18,7 @@
  * comme the_title ou the_content (Montre le contenu des articles)
  * 
  */
+/* Montre les résutats de la recherche en bouclant */
     if (have_posts()): 
         while (have_posts()) : the_post();
             the_title('<h4>', '</h4>');?>
