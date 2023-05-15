@@ -621,10 +621,10 @@ main li::before {
 
 .blocflex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.1);
-  min-height: 40vh;
+  min-height: 20vh;
 }
 
 .blocflex__article {
@@ -682,35 +682,46 @@ main li::before {
   }
 }
 
-.menu-evenement-container .menu {
+.menu-evenement-container .menu,
+.menu-bloc-archive-container .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.menu-evenement-container .menu .menu-item {
+.menu-evenement-container .menu .menu-item,
+.menu-bloc-archive-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   border: 3px solid #0080ff;
 }
-.menu-evenement-container .menu .menu-item a {
+.menu-evenement-container .menu .menu-item a,
+.menu-bloc-archive-container .menu .menu-item a {
   font-size: 2rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  width: 15rem;
 }
-.menu-evenement-container .menu .menu-item a .title {
+.menu-evenement-container .menu .menu-item a .title,
+.menu-bloc-archive-container .menu .menu-item a .title {
   font-size: 1.3rem;
   font-weight: 500;
 }
-.menu-evenement-container .menu .menu-item a .description {
-  font-size: 1rem;
+.menu-evenement-container .menu .menu-item a .description,
+.menu-bloc-archive-container .menu .menu-item a .description {
+  color: #252525;
+  font-size: 0.9rem;
+  padding-top: 0.7rem;
 }
-.menu-evenement-container .menu .menu-item a .menu-thumbnail {
+.menu-evenement-container .menu .menu-item a .menu-thumbnail,
+.menu-bloc-archive-container .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 150px;
   height: 150px;
 }
-.menu-evenement-container .menu .menu-item .menu__item__evenement {
+.menu-evenement-container .menu .menu-item .menu__item__evenement,
+.menu-bloc-archive-container .menu .menu-item .menu__item__evenement {
   display: inline-block;
 }
 

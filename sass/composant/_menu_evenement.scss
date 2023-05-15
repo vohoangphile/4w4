@@ -1,11 +1,11 @@
-.menu-evenement-container { //nav
-    // background-color: aqua;
+.menu-evenement-container, //nav
 .menu-bloc-archive-container {
-    
-}
+  
+  
     .menu { //ul
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         .menu-item { //li
             display: flex;
             flex-direction: column;
@@ -17,6 +17,7 @@
                 justify-content: space-between;
                 align-items: center;
                 text-align: center;
+                width: 15rem;
                 .title {
                     // display: block;
                     font-size: 1.3rem;
@@ -24,8 +25,11 @@
                    
                 }
                 .description {
-                    font-size: 1rem;
+                    color: #252525;
+                    font-size: 0.9rem;
+                    padding-top: 0.7rem;
                 }
+                
                 .menu-thumbnail {
                     display: block;
                     width: 150px;
@@ -42,8 +46,10 @@
     }
 }
 .menu-evenement-container .menu a {
+    
     display: flex;
     justify-content: center;
+    
 }
 .menu-bloc-archive-container .menu .menu-item a {
     background-repeat: no-repeat;
