@@ -11,7 +11,7 @@
 ?>
 <?php get_header(); ?>
 <main>
-
+<h2>Evénement</h2>
     <section class="blocflex">
         <?php 
         wp_nav_menu(array(
