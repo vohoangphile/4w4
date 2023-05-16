@@ -36,7 +36,6 @@
     <div class="blogTitre">
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
     </div>
-    <h1>Bienvenue dans le cours de 4W4</h1>
     <h2 style="text-align: center;"><?= bloginfo('description') ?></h2>
     </header>   
     <?php 
