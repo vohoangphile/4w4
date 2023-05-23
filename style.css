@@ -846,13 +846,24 @@ img.menu-thumbnail {
   color: black;
   position: absolute;
   z-index: 10;
-  background-color: #00ffff;
+  background-color: rgba(93, 185, 255, 0.3019607843);
+  opacity: 0;
+  transition: 0.5s;
+}
+#menu-item-235 .title:hover, #menu-item-235 .description:hover, #menu-item-236 .title:hover, #menu-item-236 .description:hover, #menu-item-237 .title:hover, #menu-item-237 .description:hover, #menu-item-238 .title:hover, #menu-item-238 .description:hover, #menu-item-239 .title:hover, #menu-item-239 .description:hover {
+  opacity: 1;
 }
 #menu-item-235 .title, #menu-item-236 .title, #menu-item-237 .title, #menu-item-238 .title, #menu-item-239 .title {
-  padding-top: 2rem;
+  font-weight: bold;
+  padding-top: 5rem;
+}
+#menu-item-235 .title:nth-of-type(1), #menu-item-236 .title:nth-of-type(1), #menu-item-237 .title:nth-of-type(1), #menu-item-238 .title:nth-of-type(1), #menu-item-239 .title:nth-of-type(1) {
+  padding-top: 10.5rem;
+  padding-left: 0.5rem;
 }
 
 .site__main .info {
+  font-weight: bold;
   font-size: 1.4rem;
 }
 

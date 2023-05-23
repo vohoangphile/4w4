@@ -12,7 +12,7 @@ if ( have_posts() ) : the_post(); ?>
 <?php the_content();?>
 <p class="info">Date : <?php the_field('date_de_latelier'); ?></p>
 <p class="info">Heure : <?php the_field('heure_de_la_formation'); ?></p>     
-<p class="info">Durée : <?php the_field('duree'); ?></p>    
+<p class="info">Durée : <?php the_field('duree'); ?>h</p>    
 <p class="info">Local : <?php the_field('local'); ?></p>    
 <p class="info">Formateur : <?php the_field('formateur'); ?></p>    
 <?php endif;?>

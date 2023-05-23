@@ -20,19 +20,42 @@ img.menu-thumbnail {
     
 }
 #menu-item-235, #menu-item-236, #menu-item-237, #menu-item-238, #menu-item-239 {
+    // .title, .description {
+    //     font-size: 0.9rem;
+    //     text-align: center;
+    //     color: black;
+    //     position: absolute;
+    //     z-index: 10;
+    //     background-color: #5db9ff;
+    // }
+    // .title {
+        
+    //     padding-top: 2rem;
+    // }
     .title, .description {
         font-size: 0.9rem;
         text-align: center;
         color: black;
         position: absolute;
         z-index: 10;
-        background-color: #00ffff;
+        background-color: #5db9ff4d;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .title:hover, .description:hover {
+        opacity: 1;
     }
     .title {
-        
-        padding-top: 2rem;
+        font-weight: bold;
+        padding-top: 5rem;
     }
+    .title:nth-of-type(1)  {
+        padding-top: 10.5rem;
+        padding-left: 0.5rem;
+    }
+    
 }
 .site__main .info {
+    font-weight: bold;
     font-size: 1.4rem;
 }
