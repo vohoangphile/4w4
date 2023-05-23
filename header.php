@@ -39,6 +39,7 @@
     <h2 style="text-align: center;"><?= bloginfo('description') ?></h2>
     </header>   
     <?php 
+    // Fonction qui ajoute les asides
     if (is_page_template('template-parts/template-atelier.php')) {
         get_template_part('template-parts/aside-atelier');
     }

@@ -824,6 +824,12 @@ img.custom-logo {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 1000px) {
+  #menu-atelier {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 img.menu-thumbnail {
   z-index: 1;
@@ -834,13 +840,20 @@ img.menu-thumbnail {
   height: 200px;
 }
 
-#menu-item-235 .title, #menu-item-236 .title, #menu-item-237 .title, #menu-item-238 .title, #menu-item-239 .title {
+#menu-item-235 .title, #menu-item-235 .description, #menu-item-236 .title, #menu-item-236 .description, #menu-item-237 .title, #menu-item-237 .description, #menu-item-238 .title, #menu-item-238 .description, #menu-item-239 .title, #menu-item-239 .description {
   font-size: 0.9rem;
   text-align: center;
   color: black;
   position: absolute;
   z-index: 10;
   background-color: #00ffff;
+}
+#menu-item-235 .title, #menu-item-236 .title, #menu-item-237 .title, #menu-item-238 .title, #menu-item-239 .title {
+  padding-top: 2rem;
+}
+
+.site__main .info {
+  font-size: 1.4rem;
 }
 
 /* --------------------------------------------- layout */
