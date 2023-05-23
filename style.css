@@ -867,6 +867,10 @@ img.menu-thumbnail {
   font-size: 1.4rem;
 }
 
+#menu-atelier-liens li {
+  padding-top: 4rem;
+}
+
 /* --------------------------------------------- layout */
 /**
 *  Mise en page général avec display:grid
