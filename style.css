@@ -826,6 +826,7 @@ img.custom-logo {
 }
 
 img.menu-thumbnail {
+  z-index: 1;
   position: relative;
   border: 5px solid rgb(59, 186, 250);
   border-radius: 1rem;
@@ -833,11 +834,13 @@ img.menu-thumbnail {
   height: 200px;
 }
 
-#menu-item-235 .title {
+#menu-item-235 .title, #menu-item-236 .title, #menu-item-237 .title, #menu-item-238 .title, #menu-item-239 .title {
   font-size: 0.9rem;
   text-align: center;
   color: black;
   position: absolute;
+  z-index: 10;
+  background-color: #00ffff;
 }
 
 /* --------------------------------------------- layout */
