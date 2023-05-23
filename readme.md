@@ -1,19 +1,12 @@
-# TP2
+# Épreuve finale
 ## 4w4 - Conception d'interfac eet développement web
 ### auteur: Vo Hoang Phi Le
-#### L'objectif du TP2 :
+#### L'objectif de l'épreuve finale :
 
-- Améliorer la page d'accueil interactive utiliser le modèle « front-page.php »
-- Dynamiser la structure de menu mobile actuel
-- Améliorer votre structure de sidebar
-- Améliorer l'apparence du footer
-- Améliorer le modèle category-cours pour synthétiser l'offre de cours
-- Créer quelques modèles et templates
-- Continuer à faire progresser votre thème
-- Améliorer l'extension carrousel
-- Utiliser les images « mise-en-avant » et la fonction « the_posts_thumbnail() »
-- Déployer votre projet sur le serveur Siteground
-
+- Créer 5 pages décrivant chacune un atelier avec des champs personalisés
+- Chaque page contient un image mise en avant et une zone aside (template-part)
+- Créer un menu animé qui permet d'accèder aux pages
+- Avoir un bon design adaptatif
 
 #### Références
 - https://github.com/vohoangphile

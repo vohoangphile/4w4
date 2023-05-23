@@ -28,17 +28,22 @@
     
     <section class="blocflex">
     <?php
-        if (have_posts()): 
-            while (have_posts()) : the_post(); 
-                $ma_categorie = "4w4";
-                if (in_category('galerie')){
-                    $ma_categorie = "galerie";
+        if (have_posts()): // Vérifie s'il y a des articles à afficher
+            while (have_posts()) : the_post(); // Itère à travers chaque article disponible
+                $ma_categorie = "4w4"; 
+                if (in_category('galerie')){ // vérifie si l'article actuel appartient à la catégorie "galerie".
+                    $ma_categorie = "galerie"; // on met a jour la catégorie si elle est là
                 }
                  get_template_part("template-parts/categorie", $ma_categorie);
              endwhile;
         endif;    
+        /*La boucle while continue jusqu'à ce qu'il n'y ait plus d'articles disponibles 
+        dans la boucle principale. Une fois que la boucle est terminée, la balise 
+        PHP se termine avec endwhile;
+        endif; est utilisée pour marquer la fin de la condition if (have_posts()) */
     ?>
     </section>
+    
 </main>
 
 <?php get_footer(); ?>
