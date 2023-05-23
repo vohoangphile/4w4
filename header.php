@@ -39,31 +39,12 @@
     <h2 style="text-align: center;"><?= bloginfo('description') ?></h2>
     </header>   
     <?php 
-    // if ( !is_front_page()) {
-    //     get_template_part("template-parts/aside");
-        
-    // }
-    // else if (is_page_template("template-atelier.php")) {
-    //     get_template_part("template-parts/aside-atelier");
-        
-    // }
     if (is_page_template('template-parts/template-atelier.php')) {
         get_template_part('template-parts/aside-atelier');
     }
-    // if  (!is_front_page() || 
-    //     ( in_category("cours") && in_category("4w4")) ){
-    //         get_template_part("template-parts/aside");
-    //     }
-   
-
-    // $nouvelle_classe = "";
-    // if  (is_front_page() || 
-    //     (! in_category("cours") && ! in_category("4w4")) ){
-    //       $nouvelle_classe = 'atelier__aside';
-    //     }
-    // if (is_page_template('template-atelier.php')) {
-    //      $nouvelle_classe = 'atelier__aside';
-    // }
+    else if (!is_front_page()) {
+        get_template_part("template-parts/aside");
+    }
   
     ?>
 </body>
