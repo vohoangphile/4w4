@@ -1,0 +1,25 @@
+#menu-atelier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img.menu-thumbnail {
+    
+    position: relative;
+    border: 5px solid rgb(59, 186, 250);
+    border-radius: 1rem;
+    // width: 100px;
+    // height: 100px;
+    width: 200px;
+    height: 200px;
+    
+}
+#menu-item-235 {
+    .title {
+        font-size: 0.9rem;
+        text-align: center;
+        color: black;
+        position: absolute;
+    }
+}

@@ -15,6 +15,10 @@
     <section class="blocflex">
         <?php 
         wp_nav_menu(array(
+            "menu" => "atelier",
+            "container" => "nav"
+        ));
+        wp_nav_menu(array(
         "menu" => "evenement",
         "container" => "nav"
         ));
